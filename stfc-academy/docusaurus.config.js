@@ -15,6 +15,7 @@ const config = {
 
   organizationName: 'stfc-academy',
   projectName: 'website',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -91,7 +92,7 @@ const config = {
               },
               {
                 label: 'Game Mechanics',
-                to: '/game-mechanics/Game',
+                to: '/game-mechanics',
               },
               {
                 label: 'Guides',
