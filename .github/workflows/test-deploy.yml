@@ -5,15 +5,19 @@ on:
     branches:
       - main
 
+defaults:
+  run:
+    working-directory: stfc-academy/
+
 jobs:
   test-deploy:
     name: Test deployment
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: cd stfc-academy/
       - uses: actions/setup-node@v3
         with:
+          cache-dependency-path: 'stfc-academy/'
           node-version: 18
           cache: npm
 
