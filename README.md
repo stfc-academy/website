@@ -1,7 +1,15 @@
 # STFC.Academy
 [![Deploy stfc.academy Docusaurus Project](https://github.com/stfc-academy/website/actions/workflows/docusaurus-gh-pages.yml/badge.svg?branch=main)](https://github.com/stfc-academy/website/actions/workflows/docusaurus-gh-pages.yml)
 
-# Game Assets
-After each client update, the assets included with the client are ripped from the PC version of the game and uploaded to the [`game-assets`](https://github.com/stfc-academy/website/tree/game-assets) branch of this repository. Only `Texture2D` and `Sprite` assets are uploaded to the repository to be used as images in content. These assets can be used as assets for the website. For more information on ripping the assets, check out the [`game-assets`](https://github.com/stfc-academy/website/tree/game-assets) branch. For more information on how to use the assets on the website, check out the `Contribute Guide` below.
-
-# Contribution Guide
+# Documentation
+- [`Contributing`](/documentation/contributing.md)
+    - Information on how to contribute to the website. Includes instructions on how to create new pages and some basic MarkDown information.
+- [`Contributing a Blog Post`](/documentation/contribute-blog.md)
+    - Information on how to contribute a blog post.
+- [`Game Assets`](/documentation/game-assets.md)
+    - Information on how the Game Assets are ripped from the PC client.
+- [`Style Guide`](/documentation/style-guide.md)
+    - Information on the how the style of the website should look and feel.
+- [`Build Guide`](/documentation/build-guide.md)
+    - Information on how to build the website from the source files. 
+    
