@@ -1,4 +1,4 @@
-name: Deploy Docusaurus Project with GitHub Pages dependencies preinstalled
+name: Deploy STFC.Academy Docusaurus Project
 
 on:
   # Runs on pushes targeting the default branch
