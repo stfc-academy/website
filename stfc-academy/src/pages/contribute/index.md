@@ -11,7 +11,9 @@ If you'd rather contribute monetarily to the development of the website: you can
 All monetary contributions will go to the development and maintenance of the website and content. This could include any costs accrued with hosting the site and it's processes, or purchasing packs to develop content. 
 
 ### PayPal
-`TODO: ADD PAYPAL LINK`
+[**Donate via PayPal**](https://paypal.me/stfcacademy)
+Donators will be listed on the `Supporters` page!
 
 ### Patreon
-`TODO: ADD PATREON LINK`
+[**Support on Patreon**](https://patreon.com/user?u=97264171)
+Patreon subscribers will be listed on the `Supporters` page! _Premium Supporters_ receive access to an exclusive Patreon Discord channel on the stfc.academy Discord Channel. 
