@@ -1,6 +1,8 @@
 # Introduction
 Thank you for being interested in contributing content to `stfc.academy`! This guide will walk you through how to contribute content in the form of articles on the page. 
 
+**NOTE**: This guide is still a work in progress. If you have any questions at all, please submit an Issue or reach out on our [Discord Channel](https://discord.gg/e4GnPhtwQg).
+
 # Built with Docusaurus
 `stfc.academy` is built using _Docusaurus_, a "Static Site Generator" by Meta/Facebook used to create documentation websites. Information on the internal workings on specifics of Docusaurus can be found [on their website](https://docusaurus.io/docs). However, this guide should give you a quick start for contributing to `stfc.acadmey`.
 
