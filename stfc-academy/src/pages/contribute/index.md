@@ -12,8 +12,8 @@ All monetary contributions will go to the development and maintenance of the web
 
 ### PayPal
 [**Donate via PayPal**](https://paypal.me/stfcacademy)
-Donators will be listed on the `Supporters` page!
+Donators will be listed on the [Contributors](/contributors) page!
 
 ### Patreon
 [**Support on Patreon**](https://patreon.com/user?u=97264171)
-Patreon subscribers will be listed on the `Supporters` page! _Premium Supporters_ receive access to an exclusive Patreon Discord channel on the stfc.academy Discord Channel. 
+Patreon subscribers will be listed on the [Contributors](/contributors) page! _Premium Supporters_ receive access to an exclusive Patreon Discord channel on the stfc.academy Discord Channel. 
