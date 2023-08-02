@@ -34,7 +34,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/stfc-academy/website/tree/main/stfc-academy',
         },
         blog: {
           showReadingTime: true,
@@ -74,10 +74,20 @@ const config = {
             position: 'left'
           },
           {
+            to: 'https://discord.gg/e4GnPhtwQg',
+            label: "Discord",
+            position: "left"
+          },
+          {
             to: '/contribute', 
             label: 'Contribute', 
             position: 'right'
           },
+          {
+            to: '/Contributors',
+            label: "Contributors",
+            position: "right"
+          }
         ],
       },
       footer: {
@@ -99,8 +109,8 @@ const config = {
                 to: '/guides',
               },
               {
-                label: 'Tools',
-                to: '/tools',
+                label: 'Community',
+                to: '/community',
               },
             ],
           },
@@ -112,17 +122,21 @@ const config = {
                 to: '/blog',
               },
               {
-                label: 'Community',
-                to: '/community',
+                label: 'Discord',
+                to: 'https://discord.gg/e4GnPhtwQg',
               },
               {
                 label: 'Contribute',
-                href: '/contribute',
+                to: '/contribute',
+              },
+              {
+                label: 'Contributors',
+                to: '/contributors',
               },
             ],
           },
         ],
-        copyright: `Built with Docusaurus`,
+        copyright: `stfc.academy - Built with Docusaurus`,
       },
       tableOfContents:{
         minHeadingLevel: 2,
