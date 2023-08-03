@@ -59,3 +59,4 @@ jobs:
 
         - name: Sync Bucket
           run: gsutil -m rsync -r -d ./build/ gs://beta.stfc.academy
+          
