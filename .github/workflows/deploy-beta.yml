@@ -1,0 +1,61 @@
+name: Deploy beta.stfc.academy
+
+on:
+  # Runs on PRs targeting the beta branch
+  pull_request:
+    types: [closed]
+    branches: ["beta"]
+    paths:
+      - 'stfc-academy/**'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: stfc-academy/
+
+  # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    if: github.event.pull_request.merged
+    environment:
+          name: beta
+          url: http://beta.stfc.academy/
+    runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+
+        - uses: actions/setup-node@v3
+          with:
+            cache-dependency-path: stfc-academy/
+            node-version: 18
+            cache: npm
+
+        - name: Install dependencies
+          run: npm ci
+
+        - name: Build website
+          run: npm run build
+
+        - name: Upload Artifact
+          uses: actions/upload-artifact@v3
+          with:
+            name: beta-build
+            path: "stfc-academy/build/"
+
+        - name: Google Auth
+          uses: google-github-actions/auth@v1
+          with:
+            credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
+
+        - name: Setup gcloud
+          uses: google-github-actions/setup-gcloud@v1
+
+        - name: Sync Bucket
+          run: gsutil -m rsync -r -d ./build/ gs://beta.stfc.academy
